@@ -1,4 +1,4 @@
-import { Container, SectionPadding } from '../ui-elements/styles';
+import { Container } from '../ui-elements/styles';
 
 const Hero = () => {
   return (

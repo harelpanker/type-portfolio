@@ -2,9 +2,12 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
-export function Container({ children, styles }) {
+export function Container({ children, styles, maxWidth }) {
   return (
-    <div className={`container max-w-7xl lg:px-6 relative z-20 ${styles}`}>
+    <div
+      className={`container ${
+        maxWidth ? maxWidth : 'max-w-7xl'
+      } lg:px-6 relative z-20 ${styles}`}>
       {children}
     </div>
   );
@@ -21,7 +24,7 @@ export function SectionPadding({ children, styles }) {
 export function MainButton({ children, href }) {
   return (
     <Link href={href ? href : '#'}>
-      <a className='relative flex items-center justify-center gap-1 overflow-hidden z-20 group bg-slate-900 text-center text-slate-50 px-6 lg:px-8 py-2 lg:py-3 text-lg font-medium'>
+      <a className='relative min-w-[10rem] flex items-center justify-center gap-1 overflow-hidden z-20 group bg-slate-900 text-center text-slate-50 px-6 lg:px-8 py-2 lg:py-3 text-lg font-medium'>
         <span className='relative z-30 transition duration-300 group-hover:text-slate-900'>
           {children}
         </span>
