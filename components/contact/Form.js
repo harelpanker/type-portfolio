@@ -60,7 +60,7 @@ const Form = () => {
   const stepsProgress = () => {
     !errors.from_name && watch('from_name') && setSteps(2);
     !errors.reply_to && watch('reply_to') && setSteps(3);
-    !errors.email && watch('phone') && setSteps(4);
+    !errors.phone && watch('phone') && setSteps(4);
   };
 
   const onSubmit = (data) => {
@@ -135,6 +135,7 @@ const Form = () => {
 
           <div className={`relative z-0 ${steps === 3 ? 'block' : 'hidden'}`}>
             <input
+              required
               autoComplete='off'
               type='text'
               id='phone'
@@ -145,8 +146,13 @@ const Form = () => {
             <label
               htmlFor='phone'
               className='absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>
-              Phone
+              Phone*
             </label>
+            {errors.phone && (
+              <p className='text-red-500 text-xs mt-2'>
+                {errors.phone?.message}
+              </p>
+            )}
           </div>
 
           <div className={`relative z-0 ${steps > 3 ? 'block' : 'hidden'}`}>
