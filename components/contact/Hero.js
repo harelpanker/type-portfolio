@@ -33,7 +33,7 @@ const Hero = () => {
         </h1>
         <p className='xl:text-lg text-base'>
           Have a project in mind? Looking to partner or work together? Reach out
-          through the form and I'll get back to you in the next 48 hours.
+          through the form and I&apos;ll get back to you in the next 48 hours.
         </p>
       </div>
       <div className='hidden'>

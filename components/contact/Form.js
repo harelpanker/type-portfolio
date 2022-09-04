@@ -55,7 +55,7 @@ const Form = () => {
     steps === 2 && setFocus('reply_to');
     steps === 3 && setFocus('phone');
     steps > 3 && setFocus('message');
-  }, [steps]);
+  }, [steps, setFocus]);
 
   const stepsProgress = () => {
     !errors.from_name && watch('from_name') && setSteps(2);
