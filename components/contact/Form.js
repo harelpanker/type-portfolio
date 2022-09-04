@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useStore } from '../store/store';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const emailRegExp = /^\S+@\S+\.\S+$/;
 const phoneRegExp =
@@ -27,8 +27,8 @@ const schema = yup
 
 const Form = () => {
   const [steps, setSteps] = useStore.steps();
-  const [personeName, setPersoneName] = useStore.personeName();
-  const [success, setSuccess] = useState(false);
+  const [, setPersoneName] = useStore.personeName();
+  const [success, setSuccess] = useStore.success();
 
   const {
     register,
@@ -84,7 +84,7 @@ const Form = () => {
 
   return (
     <>
-      {!success ? (
+      {!success && (
         <form
           className='w-full max-w-md'
           autoComplete='off'
@@ -199,10 +199,6 @@ const Form = () => {
             )}
           </div>
         </form>
-      ) : (
-        <div>
-          <h2>Thanks {personeName}</h2>
-        </div>
       )}
     </>
   );
