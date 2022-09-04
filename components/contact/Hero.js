@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useStore } from '../store/store';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [steps] = useStore.steps();
@@ -12,7 +12,7 @@ const Hero = () => {
     steps === 2 && setStep('w-2/4');
     steps === 3 && setStep('w-3/4');
     steps > 3 && setStep('w-4/4');
-  }, [steps]);
+  }, [steps, setStep]);
 
   return (
     <header className='w-full max-w-lg text-center flex flex-col items-center'>
@@ -24,7 +24,7 @@ const Hero = () => {
         <div className={`w-full bg-slate-50 relative z-20`}></div>
 
         <div
-          className={`${step} transition duration-300 h-full inset-0 top-0 left-0 bg-gradient-to-r from-orange-600 to-purple-600 absolute z-10`}></div>
+          className={`${step} transition duration-300 h-[80%] inset-0 top-1/2 -translate-y-1/2 left-0 bg-gradient-to-r from-orange-600 to-purple-600 absolute z-10`}></div>
       </div>
 
       <div className='flex items-center flex-col gap-8 mb-12'>

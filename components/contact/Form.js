@@ -74,8 +74,6 @@ const Form = () => {
           process.env.NEXT_PUBLIC_USER
         )
         .then(() => {
-          // router.push('/thanks');
-          console.log(data);
           setPersoneName(data.from_name);
           setSuccess(true);
         });
