@@ -4,9 +4,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const OrEmail = () => {
   return (
     <div className='flex flex-col items-center'>
-      <div class='inline-flex justify-center items-center w-full'>
-        <hr class='my-8 w-64 h-px bg-slate-200 border-0' />
-        <span class='absolute left-1/2 bg-slate-50 px-3 font-medium text-slate-900 -translate-x-1/2'>
+      <div className='inline-flex justify-center items-center w-full'>
+        <hr className='my-8 w-64 h-px bg-slate-200 border-0' />
+        <span className='absolute left-1/2 bg-slate-50 px-3 font-medium text-slate-900 -translate-x-1/2'>
           or
         </span>
       </div>
