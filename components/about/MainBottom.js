@@ -28,7 +28,7 @@ const MainBottom = () => {
           <h2 className='text-6xl font-medium mb-5'>Technolagis</h2>
           <div className='mb-3 flex flex-col gap-1'>
             <p>Hi, my name is Harel, nice to meet you!</p>
-            <p>I'm married to Miri and father to Ilay & Maya :)</p>
+            <p>I&apos;m married to Miri and father to Ilay & Maya :)</p>
           </div>
         </section>
       </div>

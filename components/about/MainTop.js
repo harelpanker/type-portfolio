@@ -19,13 +19,13 @@ const MainTop = () => {
             <h2 className='text-6xl font-medium mb-5'>About me</h2>
             <div className='mb-3 flex flex-col gap-1'>
               <p>Hi, my name is Harel, nice to meet you!</p>
-              <p>I'm married to Miri and father to Ilay & Maya :)</p>
+              <p>I&apos;m married to Miri and father to Ilay & Maya :)</p>
             </div>
             <p>
-              I'm a frontend engineer with 5+ years of experience, mostly as a
-              freelance, working for top technology companies, with the most
-              updated technologies and tools. Always hungry for self-development
-              and learning new stuff.
+              I&apos;m a frontend engineer with 5+ years of experience, mostly
+              as a freelance, working for top technology companies, with the
+              most updated technologies and tools. Always hungry for
+              self-development and learning new stuff.
             </p>
           </section>
           <section>
@@ -37,7 +37,7 @@ const MainTop = () => {
                   className='underline hover:text-slate-700 transition duration-300'
                   href='https://www.technion.ac.il/en/home-2/'
                   rel='noopener noreferrer'>
-                  'Technion - Israel Institute of Technology'
+                  &apos;Technion - Israel Institute of Technology&apos;
                 </a>
                 , in a full stak web development course back in 2016.
               </p>
