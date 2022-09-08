@@ -6,8 +6,8 @@ import { useStore } from '../store/store';
 import { useEffect } from 'react';
 
 const emailRegExp = /^\S+@\S+\.\S+$/;
-const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+// const phoneRegExp =
+//   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 const schema = yup
   .object({
@@ -17,10 +17,10 @@ const schema = yup
       .email('Email must be a valid email')
       .matches(emailRegExp, 'Email is not valid')
       .required('Email is required'),
-    phone: yup
-      .string()
-      .matches(phoneRegExp, 'Phone number is not valid')
-      .required(),
+    // phone: yup
+    //   .string()
+    //   .matches(phoneRegExp, 'Phone number is not valid')
+    //   .required(),
     message: yup.string().required('How can I help?'),
   })
   .required();
@@ -42,7 +42,7 @@ const Form = () => {
     defaultValues: {
       from_name: '',
       reply_to: '',
-      phone: '',
+      // phone: '',
       message: '',
     },
   });
@@ -53,14 +53,14 @@ const Form = () => {
 
   useEffect(() => {
     steps === 2 && setFocus('reply_to');
-    steps === 3 && setFocus('phone');
-    steps > 3 && setFocus('message');
+    // steps === 3 && setFocus('phone');
+    steps > 2 && setFocus('message');
   }, [steps, setFocus]);
 
   const stepsProgress = () => {
     !errors.from_name && watch('from_name') && setSteps(2);
     !errors.reply_to && watch('reply_to') && setSteps(3);
-    !errors.phone && watch('phone') && setSteps(4);
+    // !errors.phone && watch('phone') && setSteps(4);
   };
 
   const onSubmit = (data) => {
@@ -133,7 +133,7 @@ const Form = () => {
             )}
           </div>
 
-          <div className={`relative z-0 ${steps === 3 ? 'block' : 'hidden'}`}>
+          {/* <div className={`relative z-0 ${steps === 3 ? 'block' : 'hidden'}`}>
             <input
               required
               autoComplete='off'
@@ -153,9 +153,9 @@ const Form = () => {
                 {errors.phone?.message}
               </p>
             )}
-          </div>
+          </div> */}
 
-          <div className={`relative z-0 ${steps > 3 ? 'block' : 'hidden'}`}>
+          <div className={`relative z-0 ${steps > 2 ? 'block' : 'hidden'}`}>
             <textarea
               autoComplete='off'
               type='text'
@@ -172,7 +172,7 @@ const Form = () => {
           </div>
 
           <div className='flex justify-end mt-10'>
-            {steps <= 3 ? (
+            {steps <= 2 ? (
               <button
                 onClick={() => stepsProgress()}
                 type='button'

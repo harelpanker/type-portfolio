@@ -8,10 +8,10 @@ const Hero = () => {
   const [step, setStep] = useState(steps);
 
   useEffect(() => {
-    steps === 1 && setStep('w-1/4');
-    steps === 2 && setStep('w-2/4');
-    steps === 3 && setStep('w-3/4');
-    steps > 3 && setStep('w-4/4');
+    steps === 1 && setStep('w-1/3');
+    steps === 2 && setStep('w-2/3');
+    // steps === 3 && setStep('w-3/4');
+    steps > 2 && setStep('w-3/3');
   }, [steps, setStep]);
 
   return (
@@ -19,12 +19,12 @@ const Hero = () => {
       <div className='flex items-center flex-col gap-8 mb-12'>
         {!success ? (
           <>
-            <div className='relative container max-w-xs grid grid-cols-5 gap-14 h-1 mb-10 bg-slate-50'>
+            <div className='relative container max-w-xs grid grid-cols-4 gap-14 h-1 mb-10 bg-slate-50'>
               <div className={`w-full bg-slate-50 relative z-20`}></div>
               <div className={`w-full bg-slate-50 relative z-20`}></div>
               <div className={`w-full bg-slate-50 relative z-20`}></div>
               <div className={`w-full bg-slate-50 relative z-20`}></div>
-              <div className={`w-full bg-slate-50 relative z-20`}></div>
+              {/* <div className={`w-full bg-slate-50 relative z-20`}></div> */}
 
               <div
                 className={`${step} transition duration-300 h-[80%] inset-0 top-1/2 -translate-y-1/2 left-0 bg-gradient-to-r from-orange-600 to-purple-600 absolute z-10`}></div>
