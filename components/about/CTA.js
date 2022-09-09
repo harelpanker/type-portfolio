@@ -6,7 +6,7 @@ const CTA = () => {
     <section className='overflow-hidden px-4 py-36 xl:py-48'>
       <Container>
         <div className='text-center flex flex-col gap-6'>
-          <h2 className='font-medium text-xl'>Let's Chat</h2>
+          <h2 className='font-medium text-xl'>Let&apos;s Chat</h2>
           <Link href='/contact'>
             <a className='font-medium text-6xl md:text-9xl transition-all duration-500 tracking-normal hover:tracking-[0.35em]'>
               Contact
