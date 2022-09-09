@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import CVButton from '../components/about/CVButton';
 import Hero from '../components/about/Hero';
 import Main from '../components/about/Main';
 
@@ -8,6 +9,7 @@ const AboutPage = () => {
     <main className='relative'>
       <Hero />
       <Main />
+      {/* <CVButton /> */}
     </main>
   );
 };
