@@ -35,7 +35,7 @@ const Hero = () => {
             <h1 className='text-7xl bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-orange-600 to-purple-600'>
               Get in touch
             </h1>
-            <p className='xl:text-lg text-base'>
+            <p className='text-base'>
               Have a project in mind? Looking to partner or work together? Reach
               out through the form and I&apos;ll get back to you in the next 48
               hours.

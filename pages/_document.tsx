@@ -26,7 +26,7 @@ export default function Document() {
         <meta property='og:image' content='/open-grhpe.png' />
         <meta property='og:image:width' content='300' />
         <meta property='og:image:height' content='300' />
-        {/* <link rel='icon' href='/favicon.png' /> */}
+        <link rel='icon' href='/favicon.png' />
         {/* fonts */}
         <link
           href='https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@1,2&display=swap'
