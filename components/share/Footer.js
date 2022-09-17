@@ -1,5 +1,5 @@
 import { Container } from '../ui-elements/styles';
-import FooterBrand from './FooterBrand';
+import FooterBrand from './Brand';
 import FooterLinks from './FooterLinks';
 import FooterSM from './FooterSM';
 
