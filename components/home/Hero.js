@@ -20,8 +20,8 @@ const Hero = () => {
             </h1>
             <div className='max-w-xl mx-auto text-base lg:text-xl text-slate-600 font-medium'>
               <p>
-                Hi! I&rsquo;m Harel, a front end web developer. I convert design
-                and, if needed, give montly maintanance.
+                Hi! I&rsquo;m Harel, a front-end web developer. I convert design
+                and, if needed, give monthly maintenance.
               </p>
             </div>
 

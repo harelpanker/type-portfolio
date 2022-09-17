@@ -1,4 +1,3 @@
-import { MainButton } from '../ui-elements/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';

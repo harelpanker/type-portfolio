@@ -6,11 +6,12 @@ const Knowledge = () => {
       <h2 className='xl:text-6xl text-5xl font-medium mb-5'>Knowledge</h2>
       <div className='mb-3 flex flex-col gap-2'>
         <p>
-          As a freelance, I used to touch a lot of toppings, mostly related to
-          development, but not only.
+          As a freelancer, I have gained lots of experience in several different
+          areas of web development, but my knowledge is not limited to
+          development alone.
         </p>
         <h3 className='xl:text-2xl text:xl font-semibold'>
-          I have vast knowledge when it comes to:
+          I also have great skills when it comes to:
         </h3>
         <ul className='flex flex-col gap-2 xl:pl-10 pl-6 list-disc font-medium xl:my-4 my-2'>
           <li>
@@ -26,8 +27,8 @@ const Knowledge = () => {
           </li>
         </ul>
         <p>
-          When it comes to tools, <strong>Figma</strong> is my preferred design
-          tool, most of the development is with <strong>Webflow</strong>.
+          My preferred design tool is <strong>Figma</strong> whereas most of the
+          development is made using <strong>Webflow</strong>.
         </p>
       </div>
     </section>

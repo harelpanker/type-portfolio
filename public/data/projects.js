@@ -35,7 +35,7 @@ export const projectsData = [
     src: imageLin,
     title: 'Lin Health',
     tag: 'Webflow',
-    short_description: 'From Design to live site useing Webflow',
+    short_description: 'From Design to live site using Webflow',
     href: 'https://www.lin.health/',
     isFeatured: true,
     type: 'webflow',
