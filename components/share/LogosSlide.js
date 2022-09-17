@@ -40,7 +40,7 @@ const LogosSlide = () => {
   return (
     <section>
       <Container>
-        <div className='w-full px-6 flex justify-center items-center mb-8 text-center font-semibold text-2xl'>
+        <div className='w-full px-6 flex justify-center items-center mb-8 text-center font-semibold text-xl xl:text-2xl'>
           <h2>Companies I&rsquo;m proud to work with</h2>
         </div>
         <div className='relative'>

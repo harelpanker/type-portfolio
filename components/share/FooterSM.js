@@ -14,7 +14,6 @@ const FooterSM = () => {
         </a>
       </li>
       <li>
-        {' '}
         <a
           className='duration-300 hover:text-purple-600 transition'
           href='https://www.linkedin.com/in/panker-harel/'

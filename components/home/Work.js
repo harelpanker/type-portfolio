@@ -4,7 +4,7 @@ import WorkProjects from './WorkProjects';
 
 const Work = () => {
   return (
-    <section>
+    <section className='pt-20 xl:pt-0'>
       <SectionPadding>
         <Container>
           <WorkHeader />

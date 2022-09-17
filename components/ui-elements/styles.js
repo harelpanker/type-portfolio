@@ -15,7 +15,7 @@ export function Container({ children, styles, maxWidth }) {
 
 export function SectionPadding({ children, styles }) {
   return (
-    <div className={`${styles ? styles : 'px-5 py-20 lg:py-40'}`}>
+    <div className={`${styles ? styles : 'px-5 pb-20 pt-10 lg:py-40'}`}>
       {children}
     </div>
   );
