@@ -5,11 +5,19 @@ import CTA from '../components/share/CTA';
 
 const ProjectsPage = () => {
   return (
-    <main className='relative'>
-      <Hero />
-      <Projects />
-      <CTA />
-    </main>
+    <>
+      <Head>
+        <title>Harel Panker | Projects</title>
+        <meta name='description' content='Some of my recent projects'></meta>
+        <meta name='twitter:title' content='Harel Panker | about' />
+        <meta name='twitter:description' content='Some of my recent projects' />
+      </Head>
+      <main className='relative'>
+        <Hero />
+        <Projects />
+        <CTA />
+      </main>
+    </>
   );
 };
 

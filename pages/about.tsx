@@ -7,12 +7,20 @@ import Main from '../components/about/Main';
 // https://foliospec-extended.webflow.io/about-v1-default-light-theme
 const AboutPage = () => {
   return (
-    <main className='relative'>
-      <Hero />
-      <Main />
-      <CTA />
-      <CVButton />
-    </main>
+    <>
+      <Head>
+        <title>Harel Panker | About</title>
+        <meta name='description' content='Learn about me'></meta>
+        <meta name='twitter:title' content='Harel Panker | about' />
+        <meta name='twitter:description' content='Learn about me' />
+      </Head>
+      <main className='relative'>
+        <Hero />
+        <Main />
+        <CTA />
+        <CVButton />
+      </main>
+    </>
   );
 };
 

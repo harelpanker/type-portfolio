@@ -7,13 +7,21 @@ import { useStore } from '../components/store/store';
 const ContactPage = () => {
   const [success] = useStore.success();
   return (
-    <main className='relative py-20 lg:py-40 lg:px-6 px-4 min-h-screen'>
-      <div className='relative z-20 container max-w-6xl flex flex-col gap-20 items-center'>
-        <Hero />
-        <Form />
-        {!success && <OrEmail />}
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>Harel Panker | Contact</title>
+        <meta name='description' content='Contact me'></meta>
+        <meta name='twitter:title' content='Harel Panker | about' />
+        <meta name='twitter:description' content='Contact me' />
+      </Head>
+      <main className='relative py-20 lg:py-40 lg:px-6 px-4 min-h-screen'>
+        <div className='relative z-20 container max-w-6xl flex flex-col gap-20 items-center'>
+          <Hero />
+          <Form />
+          {!success && <OrEmail />}
+        </div>
+      </main>
+    </>
   );
 };
 

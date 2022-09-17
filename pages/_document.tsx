@@ -4,29 +4,25 @@ export default function Document() {
   return (
     <Html lang='en' dir='ltr'>
       <Head>
-        <meta
-          property='og:title'
-          content='Harel Panker | Front End Web Developer'
-        />
-        <meta
-          name='description'
-          content='Hi! My name is Harel. I can convert your design into a website, or improve it by using the best practices and the most modern tools'
-        />
+        <link rel='icon' href='/favicon.png' />
+        <meta charSet='UTF-8' />
+        {/* twitter - start */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:image' content='/og.png' />
+
         <meta property='og:locale' content='en_US' />
         <meta property='og:type' content='website' />
-        <meta
-          property='og:description'
-          content='Hi! My name is Harel. I can convert your design into a website, or improve it by using the best practices and the most modern tools'
-        />
+        <meta property='og:site_name' content='Panker.io' />
         <meta property='og:url' content='https://panker.io/' />
         <meta
           property='og:site_name'
           content='Harel Panker | Front End Web Developer'
         />
-        <meta property='og:image' content='/open-grhpe.png' />
-        <meta property='og:image:width' content='300' />
-        <meta property='og:image:height' content='300' />
+        <meta property='og:image' content='/og.png' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='630' />
         <link rel='icon' href='/favicon.png' />
+
         {/* fonts */}
         <link
           href='https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@1,2&display=swap'

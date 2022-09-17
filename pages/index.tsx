@@ -7,13 +7,28 @@ import LogosSlide from '../components/share/LogosSlide';
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <LogosSlide />
-      <Work />
-      <Recommendations />
-      <CTA />
-      {/* https://portfolio-webflow-html-website-template.webflow.io/ */}
-    </main>
+    <>
+      <Head>
+        <title>Harel Panker | Front End Web Developer</title>
+        <meta
+          name='description'
+          content='Hi! My name is Harel. I can convert your design into a website, or improve it by using the best practices and the most modern tools'></meta>
+        <meta
+          name='twitter:title'
+          content='Harel Panker | Front End Web Developer'
+        />
+        <meta
+          name='twitter:description'
+          content='Hi! My name is Harel. I can convert your design into a website, or improve it by using the best practices and the most modern tools'
+        />
+      </Head>
+      <main>
+        <Hero />
+        <LogosSlide />
+        <Work />
+        <Recommendations />
+        <CTA />
+      </main>
+    </>
   );
 }
