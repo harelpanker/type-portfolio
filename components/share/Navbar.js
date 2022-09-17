@@ -46,7 +46,7 @@ const Navbar = () => {
         <Container>
           <nav className='flex items-center justify-between'>
             <NavbarBrand />
-            <NavbarMenu openModal={openModal} />
+            <NavbarMenu openModal={openModal} hasScrolled={hasScrolled} />
           </nav>
         </Container>
       </header>
