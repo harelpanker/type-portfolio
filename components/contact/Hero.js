@@ -44,7 +44,7 @@ const Hero = () => {
         ) : (
           <div className='flex flex-col gap-2'>
             <h2 className='text-7xl leading-normal bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-orange-600 to-purple-600'>
-              Thank you Harel{personeName}!
+              Thank you {personeName}!
             </h2>
             <p className='text-lg'>I&apos;ll get back to you promptly :)</p>
           </div>
