@@ -8,7 +8,7 @@ const ProjectsPage = () => {
     <>
       <Head>
         <title>Harel Panker | Projects</title>
-        <meta name='description' content='Some of my recent projects'></meta>
+        <meta name='description' content='Some of my recent projects' />
         <meta name='twitter:title' content='Harel Panker | about' />
         <meta name='twitter:description' content='Some of my recent projects' />
       </Head>

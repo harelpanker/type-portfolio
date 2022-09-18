@@ -10,7 +10,7 @@ const ContactPage = () => {
     <>
       <Head>
         <title>Harel Panker | Contact</title>
-        <meta name='description' content='Contact me'></meta>
+        <meta name='description' content='Contact me'/>
         <meta name='twitter:title' content='Harel Panker | about' />
         <meta name='twitter:description' content='Contact me' />
       </Head>
