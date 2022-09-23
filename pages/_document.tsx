@@ -16,7 +16,7 @@ export default function Document() {
         <meta property='og:url' content='https://panker.io/' />
         <meta
           property='og:site_name'
-          content='Harel Panker | Front End Web Developer'
+          content='Harel Panker | Front-End Web Developer'
         />
         <meta property='og:image' content='/og.png' />
         <meta property='og:image:width' content='1200' />

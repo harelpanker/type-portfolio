@@ -17,7 +17,7 @@ const Main = () => {
               className='grayscale transition duration-700 hover:grayscale-0 group-hover:scale-110'
               priority
               src={profileImage}
-              alt='Harel Panker | front end web developer'
+              alt='Harel Panker | front-end web developer'
             />
           </figure>
           <div className='xl:text-2xl text-base flex flex-col gap-10'>

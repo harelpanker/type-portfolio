@@ -27,8 +27,8 @@ const Knowledge = () => {
           </li>
         </ul>
         <p>
-          My preferred design tool is <strong>Figma</strong> whereas most of the
-          development is made using <strong>Webflow</strong>.
+          I use <strong>Figma</strong> as my design tool and{' '}
+          <strong>Webflow</strong> as my development tool.
         </p>
       </div>
     </section>

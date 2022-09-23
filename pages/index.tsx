@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Harel Panker | Front End Web Developer</title>
+        <title>Harel Panker | Front-End Web Developer</title>
         <meta
           name='description'
           content='Hi! My name is Harel. I can convert your design into a website, or improve it by using the best practices and the most modern tools'
         />
         <meta
           name='twitter:title'
-          content='Harel Panker | Front End Web Developer'
+          content='Harel Panker | Front-End Web Developer'
         />
         <meta
           name='twitter:description'

@@ -15,10 +15,7 @@ const NavbarMenuMobile = ({ isOpen, closeModal }) => {
             as={Fragment}
             enter='ease-out duration-300'
             enterFrom='opacity-0'
-            enterTo='opacity-100'
-            leave='ease-in duration-200'
-            leaveFrom='opacity-100'
-            leaveTo='opacity-0'>
+            enterTo='opacity-100'>
             <Dialog.Panel className='w-full flex flex-col h-full transform overflow-hidden bg-slate-50 p-5 pt-0 text-left align-middle'>
               <div className='flex items-center justify-between min-h-[70px]'>
                 <Brand closeModal={closeModal} />
