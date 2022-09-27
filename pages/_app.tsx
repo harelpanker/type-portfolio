@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 import Layout from '../components/share/Layout';
 import Script from 'next/script';
-// import '@splidejs/react-splide/css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
