@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.panker.io/
+
+# Sitemaps
+Sitemap: https://www.panker.io/sitemap.xml
