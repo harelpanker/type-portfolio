@@ -6,6 +6,7 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      {/* Google analytics */}
       <Script
         id='gtm'
         strategy='lazyOnload'
