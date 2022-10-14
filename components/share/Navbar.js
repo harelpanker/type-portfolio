@@ -3,7 +3,7 @@ import { Container } from '../ui-elements/styles';
 import NavbarBrand from './NavbarBrand';
 
 import NavbarMenu from './NavbarMenu';
-import NavbarMenuMobile from './NavbarMenuMobile';
+import NavbarMobile from './NavbarMobile';
 
 const scrollOffset = 100;
 const trackScroll = true;
@@ -12,8 +12,7 @@ const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(!trackScroll);
   const [isOpen, setIsOpen] = useState(false);
 
-  const closeModal = () => setIsOpen(false);
-  const openModal = () => setIsOpen(true);
+  const toggleMobileMenu = () => setIsOpen(!isOpen);
 
   const checkScroll = useCallback(
     (e) => {
@@ -24,7 +23,8 @@ const Navbar = () => {
         setHasScrolled(false);
       }
     },
-    [scrollOffset]
+    []
+    // [scrollOffset]
   );
 
   useEffect(() => {
@@ -35,23 +35,25 @@ const Navbar = () => {
         window.removeEventListener('scroll', checkScroll);
       };
     }
-  }, [checkScroll, trackScroll]);
+  }, [checkScroll]);
+  // }, [checkScroll, trackScroll]);
 
   return (
-    <>
-      <header
-        className={`min-h-[70px] px-5 transition duration-1000 sticky top-0 z-50 bg-slate-50 flex items-center ${
-          hasScrolled && 'shadow-md'
-        }`}>
-        <Container>
-          <nav className='flex items-center justify-between'>
-            <NavbarBrand />
-            <NavbarMenu openModal={openModal} hasScrolled={hasScrolled} />
-          </nav>
-        </Container>
-      </header>
-      <NavbarMenuMobile closeModal={closeModal} isOpen={isOpen} />
-    </>
+    <header
+      className={`min-h-[70px] px-5 transition duration-1000 sticky top-0 z-50 bg-slate-50 flex items-center ${
+        hasScrolled && 'shadow-md'
+      }`}>
+      <Container>
+        <nav className="flex items-center justify-between">
+          <NavbarBrand toggleMobileMenu={toggleMobileMenu} />
+          <NavbarMenu
+            hasScrolled={hasScrolled}
+            toggleMobileMenu={toggleMobileMenu}
+          />
+          <NavbarMobile isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
+        </nav>
+      </Container>
+    </header>
   );
 };
 
