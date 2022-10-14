@@ -6,14 +6,14 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* Google analytics */}
+      {/* Google analytics - start */}
       <Script
-        id='gtm'
-        strategy='lazyOnload'
+        id="gtm"
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy='lazyOnload' id='analytics'>
+      <Script strategy="lazyOnload" id="analytics">
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         });
     `}
       </Script>
+      {/* Google analytics - end */}
 
       <Layout>
         <Component {...pageProps} />
