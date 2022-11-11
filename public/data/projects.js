@@ -3,7 +3,7 @@ import uuid from 'react-uuid';
 import imageLin from '/public/images/projects/lin.png';
 import imageDatreeDocs from '/public/images/projects/datree-docs.png';
 import imagePermit from '/public/images/projects/permit.png';
-import imageApono from '/public/images/projects/apono.png';
+// import imageApono from '/public/images/projects/apono.png';
 import imageDatree from '/public/images/projects/datree.png';
 import imageEverAfter from '/public/images/projects/everafter.png';
 import imageFarmacy from '/public/images/projects/farmacy.png';
@@ -18,6 +18,8 @@ import imagePicture from '/public/images/projects/the-bigger-picture.png';
 import imageValidify from '/public/images/projects/validify.png';
 import imageVoom from '/public/images/projects/voom.png';
 import imageYonivers from '/public/images/projects/yonivers.png';
+import imageNoble from '/public/images/projects/noble.png';
+import imageAntic from '/public/images/projects/antic.png';
 
 export const projectsData = [
   {
@@ -32,12 +34,34 @@ export const projectsData = [
   },
   {
     id: uuid(),
+    src: imageAntic,
+    title: 'antic',
+    tag: 'Webflow',
+    short_description:
+      'Antic develops web3 solutions that power companies from the fields of entertainment, gaming and e-commerce to unlock the potential of co-ownership.',
+    href: 'https://www.antic.xyz/',
+    isFeatured: true,
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
+    src: imageNoble,
+    title: 'Noble',
+    tag: 'Webflow',
+    short_description:
+      'Noble is the easiest way to build, launch and scale custom credit solutions',
+    href: 'https://www.benoble.io/',
+    isFeatured: false,
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
     src: imageLin,
     title: 'Lin Health',
     tag: 'Webflow',
     short_description: 'From Design to live site using Webflow',
     href: 'https://www.lin.health/',
-    isFeatured: true,
+    isFeatured: false,
     type: 'webflow',
   },
   {
@@ -51,16 +75,16 @@ export const projectsData = [
     isFeatured: true,
     type: 'code',
   },
-  {
-    id: uuid(),
-    src: imageApono,
-    title: 'Apono.io',
-    tag: 'Webflow',
-    short_description: 'Simplifying Permissions and Access Management',
-    href: 'https://www.apono.io/',
-    isFeatured: false,
-    type: 'webflow',
-  },
+  // {
+  //   id: uuid(),
+  //   src: imageApono,
+  //   title: 'Apono.io',
+  //   tag: 'Webflow',
+  //   short_description: 'Simplifying Permissions and Access Management',
+  //   href: 'https://www.apono.io/',
+  //   isFeatured: false,
+  //   type: 'webflow',
+  // },
   {
     id: uuid(),
     src: imageDatree,
