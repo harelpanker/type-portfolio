@@ -40,22 +40,22 @@ const LogosSlide = () => {
   return (
     <section>
       <Container>
-        <div className='w-full px-6 flex justify-center items-center mb-8 text-center font-semibold text-xl xl:text-2xl'>
+        <div className="w-full px-6 flex justify-center items-center mb-8 text-center font-semibold text-xl xl:text-2xl">
           <h2>I&rsquo;m proud of working with</h2>
         </div>
-        <div className='relative'>
-          <div className='absolute z-10 pointer-events-none w-1/5 h-full inset-0 top-0 left-0 bg-gradient-to-r from-slate-50'></div>
-          <div className='absolute z-10 pointer-events-none w-1/5 h-full inset-0 top-0 right-0 left-auto bg-gradient-to-l from-slate-50'></div>
+        <div className="relative">
+          <div className="absolute z-10 pointer-events-none w-1/5 h-full inset-0 top-0 left-0 bg-gradient-to-r from-slate-50"></div>
+          <div className="absolute z-10 pointer-events-none w-1/5 h-full inset-0 top-0 right-0 left-auto bg-gradient-to-l from-slate-50"></div>
 
-          <Marquee pauseOnHover='true' speed={40}>
+          <Marquee pauseOnHover="true" speed={40}>
             {logosData.map((logo) => (
-              <div key={logo.id} className='flex justify-center items-end'>
+              <div key={logo.id} className="flex justify-center items-end">
                 <a
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={logo.href}
-                  className='flex cursor-pointer justify-center items-end grayscale transition duration-500 px-12 py-2 rounded-2xl hover:grayscale-0'>
-                  <Image src={logo.src} alt={logo.alt} />
+                  className="flex cursor-pointer justify-center items-end grayscale transition duration-500 px-12 py-2 rounded-2xl hover:grayscale-0">
+                  <Image priority src={logo.src} alt={logo.alt} />
                 </a>
               </div>
             ))}
