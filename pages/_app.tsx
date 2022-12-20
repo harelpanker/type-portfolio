@@ -1,9 +1,12 @@
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
+import localFont from '@next/font/local';
 import Layout from '../components/share/Layout';
 import Script from 'next/script';
 
 import { Analytics } from '@vercel/analytics/react';
+
+const jakarta = localFont({ src: '../public/fonts/jakarta.ttf' });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
