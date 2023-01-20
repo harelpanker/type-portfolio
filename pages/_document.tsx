@@ -30,6 +30,15 @@ export default function Document() {
         />
       </Head>
       <body className='antialiased box-border m-0 p-0 bg-slate-50 text-slate-900 font-jakarta'>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src='https://www.googletagmanager.com/ns.html?id=GTM-W8D8DVL'
+            height='0'
+            width='0'
+            style={{ display: 'none', visibility: 'hidden' }}></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Main />
         <NextScript />
       </body>

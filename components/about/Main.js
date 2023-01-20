@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import profileImage from '/public/images/about/profile.jpeg';
 import { Container } from '../ui-elements/styles';
 import About from './About';
