@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme');
+// const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -9,12 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   jakarta: ['Plus Jakarta Sans', 'sans-serif'],
-      // },
       fontFamily: {
-        jakarta: ['var(--font-jakarta)', ...fontFamily.sans],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
+      // fontFamily: {
+      //   jakarta: ['var(--font-jakarta)', ...fontFamily.sans],
+      // },
       container: { center: true },
     },
   },

@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
-import localFont from '@next/font/local';
+// import localFont from '@next/font/local';
 import Layout from '../components/share/Layout';
 import Script from 'next/script';
 
 import { Analytics } from '@vercel/analytics/react';
 
-const jakarta = localFont({
-  src: '../public/fonts/jakarta.ttf',
-  variable: '--font-jakarta',
-});
+// const jakarta = localFont({
+//   src: '../public/fonts/jakarta.ttf',
+//   variable: '--font-jakarta',
+// });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -31,12 +31,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       {/* Google analytics - end */}
-      <div className={`${jakarta.variable} font-sans`}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-        <Analytics />
-      </div>
+      {/* <div className={`${jakarta.variable} font-sans`}> */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      <Analytics />
+      {/* </div> */}
     </>
   );
 }
