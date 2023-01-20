@@ -22,12 +22,6 @@ export default function Document() {
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
         <link rel='icon' href='/favicon.png' />
-
-        {/* fonts */}
-        <link
-          href='https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@1,2&display=swap'
-          rel='stylesheet'
-        />
       </Head>
       <body className='antialiased box-border m-0 p-0 bg-slate-50 text-slate-900 font-jakarta'>
         {/* Google Tag Manager (noscript) */}
