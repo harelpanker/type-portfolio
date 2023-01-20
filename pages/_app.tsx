@@ -6,10 +6,13 @@ import Script from 'next/script';
 
 import { Analytics } from '@vercel/analytics/react';
 
+const myFont = localFont({ src: './jakarta.ttf' });
 const jakarta = localFont({
-  src: './fonts/jakarta.ttf',
+  src: './jakarta.ttf',
   variable: '--font-jakarta',
 });
+
+//console.log('jakarta', jakarta);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,8 +26,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           })(window,document,'script','dataLayer','GTM-W8D8DVL');
         `}
       </Script>
-      {/* Google analytics - end */}
-      <div className={`${jakarta.variable} font-sans`}>
+      {/* ${jakarta.className} ${jakarta.style} className={`${jakarta.variable} font-sans`} */}
+      <div className={`${myFont.className} font-sans`}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
