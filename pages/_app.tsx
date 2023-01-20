@@ -6,19 +6,22 @@ import Script from 'next/script';
 
 import { Analytics } from '@vercel/analytics/react';
 
-const jakarta = localFont({ src: '../public/fonts/jakarta.ttf' });
+const jakarta = localFont({
+  src: '../public/fonts/jakarta.ttf',
+  variable: '--font-jakarta',
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       {/* Google analytics - start */}
       <Script
-        id="gtm"
-        strategy="lazyOnload"
+        id='gtm'
+        strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="lazyOnload" id="analytics">
+      <Script strategy='lazyOnload' id='analytics'>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -29,11 +32,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     `}
       </Script>
       {/* Google analytics - end */}
-
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Analytics />
+      <div className={`${jakarta.variable} font-sans`}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+        <Analytics />
+      </div>
     </>
   );
 }
