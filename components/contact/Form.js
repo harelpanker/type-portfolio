@@ -64,7 +64,6 @@ const Form = () => {
   };
 
   const onSubmit = (data) => {
-    console.log(data);
     try {
       emailjs
         .send(
